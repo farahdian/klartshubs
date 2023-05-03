@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div>
+    <img src="{{ url.format(hub.Photo_Reference,key) }}">
+    <h1>{{hub.Name}}</h1>
+    
+    <div class="flex-container">
+    {% for category in hub.Category %}
+    <div class="pill">
+        <p>{{category}}</p>
+    </div>
+    {% endfor %}
+    </div>
+    
+    <h5>{{hub.Address}}</h5>
+    {{hub.Rating}}
+</div>
+{% endblock %}

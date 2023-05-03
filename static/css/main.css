@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Sen&display=swap');
+
+.card{
+    background-color: #4B5043;
+    color: #F4BBD3;
+    padding: 20px;
+    margin: 20px;
+    border-style: solid;
+    border-radius: 20px;
+    border-color: #9BC4BC;
+    width: 300px;
+    
+}
+
+.pill{
+    border-style: solid;
+    padding: 5px;
+    margin: 5px;
+    border-color: #9BC4BC;
+
+}
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h1{
+    font-family: 'Darumadrop One', cursive;
+}
+
+body{
+    background-color: #9BC4BC;
+    font-family: 'Sen', sans-serif;
+    color: #4B5043;;
+}
