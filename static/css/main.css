@@ -12,6 +12,11 @@
     
 }
 
+a{
+    font-family: 'Darumadrop One', cursive;
+    color: #F4BBD3;
+    font-size: 36px;
+}
 .pill{
     border-style: solid;
     padding: 5px;

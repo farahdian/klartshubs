@@ -15,6 +15,7 @@
    {% for card in cards %}
     <div id="{{card.id}}" class="card">
         <img src="{{ url.format(card.photo_ref,key) }}">
+        <a href="{{ url_for( 'get_a_hub', hub_id=card.id ) }}">{{card.name}}</a>
         <div class="flex-container">
         {% for category in card.category %}
         <div class="pill">
@@ -22,7 +23,7 @@
         </div>
         {% endfor %}
         </div>
-        <a href="{{ url_for( 'get_a_hub', hub_id=card.id ) }}">{{card.name}}</a>
+       
         
         
     </div>
