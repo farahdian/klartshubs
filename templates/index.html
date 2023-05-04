@@ -4,13 +4,12 @@
 
 <div>
 <h1>KL Arts Hubs</h1>
+<img src="/static/images/shophouse.png"></img> 
 
 <p>Explore some of Kuala Lumpur's exhibition spaces, performing arts and bookstores.</p>
 </div>
 
-<!-- pairs is a list that must be sent here by a route function
-     The list will contain 45 pairs: a presidency number, and a
-     president's name -->
+
 <div class="flex-container">
    {% for card in cards %}
     <div id="{{card.id}}" class="card">
@@ -25,8 +24,10 @@
         </div>
        
         
-        
+         
     </div>
     {% endfor %}
+ 
+   
 </div>
 {% endblock %}

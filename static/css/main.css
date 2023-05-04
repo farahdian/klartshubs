@@ -9,13 +9,26 @@
     border-radius: 20px;
     border-color: #9BC4BC;
     width: 300px;
+    flex-direction: column;
     
 }
 
-a{
+.card a{
     font-family: 'Darumadrop One', cursive;
-    color: #F4BBD3;
     font-size: 36px;
+    color: #F4BBD3;
+
+}
+.card img{
+    width: 300px; 
+    height: 200px; 
+    object-fit: cover;
+}
+
+a{
+    
+    color:   #4B5043;
+    
 }
 .pill{
     border-style: solid;

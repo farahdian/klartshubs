@@ -38,8 +38,6 @@ class hub():
 
 #start route
 @app.route('/')
-
-
 def get_hubs():
     response=query_api()
     result=[]
@@ -57,6 +55,8 @@ def get_a_hub(hub_id):
     res=query_record(hub_id)
     print(res)
     return render_template("hub.html", hub=res,url=credentials.GMAPS_PHOTOS_URL, key=credentials.API_KEY)
+
+
 
 #allow debug console
 if __name__ == '__main__':

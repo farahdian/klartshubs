@@ -1,11 +1,12 @@
 {% extends 'base.html' %}
 
 {% block content %}
-
+<a href="{{ url_for('get_hubs') }}">Back</a>
 <div>
+    
     <img src="{{ url.format(hub.Photo_Reference,key) }}">
     <h1>{{hub.Name}}</h1>
-    <p>Will put descriptions and highlights of each place here</p>
+    <p>{{hub.Short_Description}}</p>
     <div class="flex-container">
     {% for category in hub.Category %}
     <div class="pill">
@@ -13,8 +14,10 @@
     </div>
     {% endfor %}
     </div>
+    <a href="{{ hub.Instagram }}">Instagram</a>
     
     <h5>{{hub.Address}}</h5>
-    {{hub.Rating}}
+    Google Maps Rating: {{hub.Rating}}
+    
 </div>
 {% endblock %}
